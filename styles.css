@@ -533,3 +533,59 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* =============================
+   FORM STYLING (Formspree)
+   ============================= */
+  .contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: border-color var(--transition);
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 8px var(--accent-glow);
+  }
+
+  .contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .social-links-container {
+    margin-top: 30px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-btn {
+    cursor: pointer;
+    margin: 0;
+  }

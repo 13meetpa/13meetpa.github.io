@@ -182,15 +182,31 @@
     <section id="contact" class="section contact-section">
       <h2 class="section-title">Get In Touch</h2>
       <p class="contact-sub">Open to new grad roles. Feel free to reach out.</p>
-      <div class="contact-links">
-        <a href="mailto:13meetpa@gmail.com" class="contact-btn">Email Me</a>
-        <a href="https://www.linkedin.com/in/meetkumar-patel-085047311/" class="contact-btn outline" target="_blank">LinkedIn ↗</a>
-        <a href="https://github.com/13meetpa" class="contact-btn outline" target="_blank">GitHub ↗</a>
+      <div class="contact-container">
+        <!-- Formspree inte.-->
+         <form action="https://formspere.io/f/xeaeglap" method="POST" class="contact-form">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="How can I help you?" required></textarea>
+          </div>
+          <button type="submit" class="contact-btn">Send Message</button>
+         </form>
+
+         <!-- Social links -->
+          <div class="social-links-container">
+            <a href="https://www.linkedin.com/in/meetkumar-patel-085047311/" class="contact-btn outline" target="_blank">LinkedIn ↗</a>
+            <a href="https://github.com/13meetpa" class="contact-btn outline" target="_blank">GitHub ↗</a>
+          </div>
       </div>
     </section>
 
     <footer>
-      <p>© 2026 Meetkumar Patel &nbsp;·&nbsp; 13meetpa@gmail.com</p>
+      <p>© 2026 Meetkumar Patel | Reach out via the contact form above.</p>
     </footer>
 
     <script src="main.js"></script>
